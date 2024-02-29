@@ -4,7 +4,7 @@ import { Container, ProjectsContainer } from "./Projects.styles";
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="projects">
       <h2>Projects</h2>
       <ProjectsContainer>
         {projects.map((project, id) => (

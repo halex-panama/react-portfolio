@@ -1,18 +1,18 @@
 [
   {
-    "title": "Movie App",
-    "imageSrc": "https://i.ibb.co/ZYwLFsS/movie-app-v3.jpg",
-    "description": "This project using TMDB API to show popular movie with the trailer and cast.",
-    "skills": ["React", "Express", "Styled Components"],
-    "demo": "https://movie-app-1605.netlify.app/",
-    "source": "https://github.com/halex-panama/movie-app-v3"
-  },
-  {
     "title": "Recipe App",
-    "imageSrc": "https://i.ibb.co/ZYwLFsS/movie-app-v3.jpg",
+    "imageSrc": "https://i.ibb.co/mvNTCkQ/recipe-app-v2.jpg",
     "description": "This project using Spoonacular API to show popular food recipe.",
     "skills": ["React", "Styled Components"],
     "demo": "https://recipe-app-v2-2772.netlify.app/",
     "source": "https://github.com/halex-panama/recipe-app-v2"
+  },
+  {
+    "title": "Movie App",
+    "imageSrc": "https://i.ibb.co/ZYwLFsS/movie-app-v3.jpg",
+    "description": "This project using TMDB API to show popular movie with the trailer and cast.",
+    "skills": ["React", "Styled Components"],
+    "demo": "https://movie-app-1605.netlify.app/",
+    "source": "https://github.com/halex-panama/movie-app-v3"
   }
 ]

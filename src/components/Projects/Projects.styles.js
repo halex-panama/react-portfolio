@@ -11,15 +11,22 @@ export const Container = styled.section`
     letter-spacing: 1.75px;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    padding: 1rem 3rem;
+
+    @media screen and (max-width: 830px) {
+      padding: 1rem 0;
+    }
   }
 `;
 
 export const ProjectsContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: 830px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

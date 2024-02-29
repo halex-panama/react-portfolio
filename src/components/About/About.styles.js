@@ -14,7 +14,7 @@ export const Container = styled.section`
     font-weight: 700;
     letter-spacing: 1.75px;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   @media screen and (max-width: 640px) {

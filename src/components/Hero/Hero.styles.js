@@ -4,7 +4,7 @@ export const Container = styled.section`
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   z-index: 1;
   margin: 5rem 10%;
   gap: 2rem;
@@ -55,21 +55,16 @@ export const ContactBtn = styled.a`
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 6.25rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   padding: 1rem 1.5rem;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-
-  @media screen and (max-width: 640px) {
-    font-size: 1.5rem;
-  }
 `;
 
 export const HeroImg = styled.img`
-  width: 50%;
   z-index: 1;
   border-radius: 50%;
-  width: 20rem;
+  width: 15rem;
 
   animation-name: floating;
   animation-duration: 3s;
@@ -89,6 +84,6 @@ export const HeroImg = styled.img`
   }
 
   @media screen and (max-width: 640px) {
-    width: 15rem;
+    width: 12.5rem;
   }
 `;

@@ -4,15 +4,15 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border-radius: 10px;
+  border-radius: 1rem;
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 1rem 1.5rem;
-  max-width: 20rem;
   text-align: justify-all;
 
   img {
     border-radius: 1rem;
+    width: 100%;
   }
 
   h3 {
@@ -46,8 +46,8 @@ export const Skill = styled.li`
 export const Links = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.5rem;
 `;
 
 export const Link = styled.a`

@@ -17,7 +17,7 @@ const Hero = () => {
           digital world.
         </p> */}
         <p>Frontend Developer</p>
-        <ContactBtn href="mailto:myemail@email.com">Contact Me</ContactBtn>
+        <ContactBtn href="mailto:halex.panama@email.com">Contact Me</ContactBtn>
       </Content>
       <HeroImg src={ProfileImg} alt="hero image" />
     </Container>
