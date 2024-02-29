@@ -15,6 +15,11 @@ export const Container = styled.section`
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
+
+  @media screen and (max-width: 640px) {
+    margin: 2.5rem 1rem;
+    padding: 1.5rem;
+  }
 `;
 
 export const Content = styled.div`

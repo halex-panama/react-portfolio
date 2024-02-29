@@ -33,6 +33,10 @@ export const Content = styled.div`
     );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+
+    @media screen and (max-width: 640px) {
+      font-size: 3rem;
+    }
   }
 
   p {
@@ -55,6 +59,10 @@ export const ContactBtn = styled.a`
   font-weight: 600;
   padding: 1rem 1.5rem;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+
+  @media screen and (max-width: 640px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const HeroImg = styled.img`
@@ -78,5 +86,9 @@ export const HeroImg = styled.img`
     100% {
       transform: translate(0, -0px);
     }
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 15rem;
   }
 `;

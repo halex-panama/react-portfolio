@@ -16,6 +16,11 @@ export const Container = styled.section`
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
+
+  @media screen and (max-width: 640px) {
+    margin: 0 1rem;
+    padding: 1.5rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -27,5 +32,9 @@ export const Content = styled.div`
 
   p {
     font-size: 1.5rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1.25rem;
+    }
   }
 `;
