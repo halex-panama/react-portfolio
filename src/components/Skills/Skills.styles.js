@@ -37,7 +37,7 @@ export const Skill = styled.div`
   border-radius: 1rem;
   padding: 1rem;
   width: 12rem;
-  height: 5rem;
+  height: 6.25rem;
 
   img {
     height: 1rem;

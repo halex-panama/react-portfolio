@@ -14,5 +14,9 @@
   {
     "title": "React JS",
     "level": "Basic"
+  },
+  {
+    "title": "Styled Components",
+    "level": "Basic"
   }
 ]

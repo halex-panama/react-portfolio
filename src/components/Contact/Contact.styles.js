@@ -8,7 +8,7 @@ export const Container = styled.footer`
   justify-content: space-evenly;
   width: 100vw;
   padding: 58px 10%;
-  gap: 10px;
+  gap: 1.5rem;
   margin: 8rem 0;
 
   h2 {
@@ -30,6 +30,10 @@ export const Container = styled.footer`
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    p {
+      font-size: 1.5rem;
     }
   }
 `;
@@ -62,11 +66,11 @@ export const Link = styled.li`
   @media screen and (max-width: 830px) {
     gap: 0.5rem;
     a {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     img {
-      height: 1.25rem;
+      height: 1.2rem;
     }
   }
 `;

@@ -40,7 +40,7 @@ export const Skill = styled.li`
   font-weight: 400;
   border-radius: 1rem;
   background: var(--color-dark);
-  padding: 2px 22px;
+  padding: 5px 22px;
 `;
 
 export const Links = styled.div`
