@@ -8,7 +8,7 @@ export const Container = styled.div`
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 1rem 1.5rem;
-  text-align: justify-all;
+  text-align: justify;
 
   img {
     border-radius: 1rem;
