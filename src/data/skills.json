@@ -1,18 +1,22 @@
 [
   {
     "title": "HTML",
-    "level": "Basic"
+    "level": "Intermediate"
   },
   {
     "title": "CSS",
-    "level": "Basic"
+    "level": "Intermediate"
   },
   {
     "title": "JavaScript",
-    "level": "Basic"
+    "level": "Intermediate"
   },
   {
     "title": "React JS",
+    "level": "Basic"
+  },
+  {
+    "title": "TypeScript",
     "level": "Basic"
   },
   {
