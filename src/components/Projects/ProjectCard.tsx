@@ -1,8 +1,19 @@
 import { Container, Skills, Skill, Links, Link } from "./ProjectCard.styles";
 
+type Props = {
+  project: {
+    title: string;
+    imageSrc: string;
+    description: string;
+    skills: string[];
+    demo: string;
+    source: string;
+  };
+};
+
 const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
-}) => {
+}: Props) => {
   return (
     <Container>
       <img src={imageSrc} alt={title} />

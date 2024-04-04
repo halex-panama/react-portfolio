@@ -3,7 +3,7 @@
     "title": "Recipe App",
     "imageSrc": "https://i.ibb.co/mvNTCkQ/recipe-app-v2.jpg",
     "description": "Explore popular recipes, find your favorites, and explore recipe information, including ingredients and step-by-step instructions, all powered by the Spoonacular API.",
-    "skills": ["React", "Styled Components"],
+    "skills": ["React", "Styled Components", "TypeScript"],
     "demo": "https://recipe-app-v2-2772.netlify.app/",
     "source": "https://github.com/halex-panama/recipe-app-v2"
   },

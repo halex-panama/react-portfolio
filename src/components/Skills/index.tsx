@@ -8,7 +8,7 @@ const Skills = () => {
       <h2>Skills</h2>
       <Content>
         {skills.map((skill, id) => (
-          <Skill key={skill.id}>
+          <Skill key={id}>
             <img src={checkmark} alt="checkmark icon" />
             <div>
               <h3>{skill.title}</h3>

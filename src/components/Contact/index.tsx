@@ -5,7 +5,7 @@ import { Container, Links, Link } from "./Contact.styles";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <div>
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>

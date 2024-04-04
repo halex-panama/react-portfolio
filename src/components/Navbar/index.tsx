@@ -18,7 +18,7 @@ const Navbar = () => {
           onClick={() => setMenu(!menu)}
         />
 
-        <MenuItems className={menu && "menuOpen"}>
+        <MenuItems className={menu ? "menuOpen" : undefined}>
           <li>
             <a href="#about">About</a>
           </li>
