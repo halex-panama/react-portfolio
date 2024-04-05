@@ -1,10 +1,21 @@
-import { Container, Content } from "./About.styles";
+import { fadeInBottomVariant, fadeInLeftVariant } from "../../data/animation";
+import { Container, Content, Heading } from "./About.styles";
 
 const About = () => {
   return (
     <Container id="about">
-      <h2>About Me</h2>
-      <Content>
+      <Heading
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInLeftVariant}
+      >
+        About Me
+      </Heading>
+      <Content
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInBottomVariant}
+      >
         <p>
           Hi there <br /> I'm Alex, a passionate Frontend Developer dedicated to
           crafting captivating web experiences. With a solid foundation in web

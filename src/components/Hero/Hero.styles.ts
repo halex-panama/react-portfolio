@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.section`
@@ -6,15 +7,17 @@ export const Container = styled.section`
   align-items: center;
   justify-content: space-around;
   z-index: 1;
-  margin: 5rem 10%;
+  margin: 0 10%;
   gap: 2rem;
+  height: 90dvh;
 
   @media screen and (max-width: 830px) {
     flex-direction: column-reverse;
+    justify-content: center;
   }
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -52,16 +55,24 @@ export const Content = styled.div`
 
 export const ContactBtn = styled.a`
   text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 6.25rem;
+
+  border-radius: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
   padding: 1rem 1.5rem;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-text);
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
 `;
 
-export const HeroImg = styled.img`
+export const HeroImg = styled(motion.img)`
   z-index: 1;
   border-radius: 50%;
   width: 15rem;

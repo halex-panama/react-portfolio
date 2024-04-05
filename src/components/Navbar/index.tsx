@@ -1,17 +1,27 @@
-import { Nav, Menu, MenuBtn, MenuItems } from "./Navbar.styles";
+import { Nav, Menu, MenuBtn, MenuItems, NavTitle } from "./Navbar.styles";
 import OpenBtn from "../../assets/nav/menuIcon.png";
 import CloseBtn from "../../assets/nav/closeIcon.png";
 import { useState } from "react";
+import { fadeInLeftVariant, fadeInRightVariant } from "../../data/animation";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
     <Nav>
-      <a className="nav-title" href="/">
+      <NavTitle
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInLeftVariant}
+        href="/"
+      >
         My Portfolio
-      </a>
-      <Menu>
+      </NavTitle>
+      <Menu
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInRightVariant}
+      >
         <MenuBtn
           src={menu ? CloseBtn : OpenBtn}
           alt="menu-button"

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
@@ -9,20 +10,20 @@ export const Nav = styled.nav`
   margin: 0 10%;
   padding: 1.25rem 0;
 
-  .nav-title {
-    font-size: 2rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--color-text);
-  }
-
   @media screen and (max-width: 830px) {
     flex-direction: column;
     align-items: flex-start;
   }
 `;
 
-export const Menu = styled.div`
+export const NavTitle = styled(motion.a)`
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+`;
+
+export const Menu = styled(motion.div)`
   display: flex;
 
   @media screen and (max-width: 830px) {
@@ -57,7 +58,15 @@ export const MenuItems = styled.ul`
   a {
     font-size: 1.5rem;
     color: var(--color-text);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    text-decoration-color: rgba(255, 255, 255, 0);
+    transition: 300ms;
+
+    &:hover {
+      text-decoration-color: rgba(255, 255, 255, 1);
+      text-underline-offset: 0.5rem;
+    }
   }
 
   @media screen and (max-width: 830px) {

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.section`
@@ -7,29 +8,29 @@ export const Container = styled.section`
   background-color: rgba(12, 12, 12, 0.6);
   border-radius: 15px;
 
-  h2 {
-    color: var(--color-text);
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-  }
-
   @media screen and (max-width: 640px) {
     margin: 2.5rem 1rem;
     padding: 1.5rem;
   }
 `;
 
-export const Content = styled.div`
+export const Heading = styled(motion.h2)`
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+`;
+
+export const Content = styled(motion.div)`
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 `;
 
-export const Skill = styled.div`
+export const Skill = styled(motion.div)`
   display: flex;
   align-items: center;
   gap: 0.5rem;

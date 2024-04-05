@@ -1,11 +1,18 @@
+import { fadeInLeftVariant } from "../../data/animation";
 import projects from "../../data/projects.json";
 import ProjectCard from "./ProjectCard";
-import { Container, ProjectsContainer } from "./Projects.styles";
+import { Container, ProjectsContainer, Heading } from "./Projects.styles";
 
 const Projects = () => {
   return (
     <Container id="projects">
-      <h2>Projects</h2>
+      <Heading
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInLeftVariant}
+      >
+        Projects
+      </Heading>
       <ProjectsContainer>
         {projects.map((project, id) => (
           <ProjectCard key={id} project={project} />

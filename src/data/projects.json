@@ -5,7 +5,8 @@
     "description": "Explore popular recipes, find your favorites, and explore recipe information, including ingredients and step-by-step instructions, all powered by the Spoonacular API.",
     "skills": ["React", "Styled Components", "TypeScript"],
     "demo": "https://recipe-app-v2-2772.netlify.app/",
-    "source": "https://github.com/halex-panama/recipe-app-v2"
+    "source": "https://github.com/halex-panama/recipe-app-v2",
+    "reverse": false
   },
   {
     "title": "Movie App",
@@ -13,6 +14,7 @@
     "description": "Embark on a cinematic journey with my project-based portfolio, powered by the TMDB API. Explore popular movies, dive into detailed movie information, including trailers and cast members.",
     "skills": ["React", "Styled Components", "TypeScript"],
     "demo": "https://movie-app-1605.netlify.app/",
-    "source": "https://github.com/halex-panama/movie-app-v3"
+    "source": "https://github.com/halex-panama/movie-app-v3",
+    "reverse": true
   }
 ]

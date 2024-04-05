@@ -1,19 +1,41 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Container = styled.div`
+type Props = {
+  reverse?: boolean;
+};
+
+export const Container = styled.div<Props>`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   border-radius: 1rem;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 1rem 1.5rem;
-  text-align: justify;
+  padding: 1rem 0;
+  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
 
-  img {
-    border-radius: 1rem;
-    width: 100%;
+  @media screen and (max-width: 830px) {
+    flex-direction: column;
   }
+`;
+
+export const ProjectImg = styled(motion.img)`
+  border-radius: 1rem;
+  width: 50%;
+  height: 50%;
+
+  @media screen and (max-width: 830px) {
+    order: 0;
+    width: 100%;
+    height: 100%;
+  }
+`;
+
+export const TextContainer = styled(motion.div)`
+  text-align: justify;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 
   h3 {
     font-size: 1.5rem;
@@ -38,7 +60,7 @@ export const Skills = styled.ul`
 export const Skill = styled.li`
   font-size: 1rem;
   font-weight: 400;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   background: var(--color-dark);
   padding: 5px 22px;
 `;
@@ -52,10 +74,16 @@ export const Links = styled.div`
 
 export const Link = styled.a`
   text-decoration: none;
+  text-align: center;
   color: var(--color-text);
-  font-size: 1.75rem;
-  font-weight: 600;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 1px 20px;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-primary);
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+  }
 `;

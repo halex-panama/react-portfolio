@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.footer`
   color: var(--color-text);
@@ -38,7 +39,7 @@ export const Container = styled.footer`
   }
 `;
 
-export const Links = styled.ul`
+export const Links = styled(motion.ul)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;

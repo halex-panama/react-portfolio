@@ -1,10 +1,15 @@
 import { Container, Content, ContactBtn, HeroImg } from "./Hero.styles";
 import ProfileImg from "../../assets/hero/hero.jpg";
+import { fadeInTopVariant, fadeInBottomVariant } from "../../data/animation";
 
 const Hero = () => {
   return (
     <Container>
-      <Content>
+      <Content
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInBottomVariant}
+      >
         <h1>Hi I'm Alex</h1>
         {/* <p>
           Welcome to My Portfolio <br /> I'm Alex, a passionate Frontend
@@ -19,7 +24,13 @@ const Hero = () => {
         <p>Frontend Developer</p>
         <ContactBtn href="mailto:halex.panama@email.com">Contact Me</ContactBtn>
       </Content>
-      <HeroImg src={ProfileImg} alt="hero image" />
+      <HeroImg
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInTopVariant}
+        src={ProfileImg}
+        alt="hero image"
+      />
     </Container>
   );
 };

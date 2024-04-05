@@ -1,16 +1,26 @@
 import EmailIcon from "../../assets/contact/emailIcon.png";
 import GitHubIcon from "../../assets/contact/githubIcon.png";
 import LinkedinIcon from "../../assets/contact/linkedinIcon.png";
+import { fadeInLeftVariant, fadeInRightVariant } from "../../data/animation";
 import { Container, Links, Link } from "./Contact.styles";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <Container id="contact">
-      <div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInLeftVariant}
+      >
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
-      </div>
-      <Links>
+      </motion.div>
+      <Links
+        initial="hidden"
+        whileInView="visible"
+        variants={fadeInRightVariant}
+      >
         <Link>
           <img src={EmailIcon} alt="email" />
           <a href="mailto:halex.panama@email.com">halex.panama@gmail.com</a>
