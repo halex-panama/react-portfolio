@@ -1,4 +1,4 @@
-import { fadeInLeftVariant } from "../../data/animation";
+import { fadeInLeftVariant } from "../../utils/animation";
 import projects from "../../data/projects.json";
 import ProjectCard from "./ProjectCard";
 import { Container, ProjectsContainer, Heading } from "./Projects.styles";

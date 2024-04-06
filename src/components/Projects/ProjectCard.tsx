@@ -1,4 +1,4 @@
-import { fadeInLeftVariant, fadeInRightVariant } from "../../data/animation";
+import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/animation";
 import {
   Container,
   TextContainer,

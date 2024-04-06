@@ -1,7 +1,7 @@
 import { Container, Content, Skill, Heading } from "./Skills.styles";
 import checkmark from "../../assets/skills/checkmark.png";
 import skills from "../../data/skills.json";
-import { fadeInBottomVariant, fadeInLeftVariant } from "../../data/animation";
+import { fadeInLeftVariant, fadeInSkillsVariant } from "../../utils/animation";
 
 const Skills = () => {
   return (
@@ -16,9 +16,10 @@ const Skills = () => {
       <Content>
         {skills.map((skill, id) => (
           <Skill
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeInBottomVariant}
+            initial="initial"
+            whileInView="animate"
+            variants={fadeInSkillsVariant}
+            custom={id}
             key={id}
           >
             <img src={checkmark} alt="checkmark icon" />

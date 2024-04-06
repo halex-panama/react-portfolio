@@ -21,6 +21,7 @@ export const NavTitle = styled(motion.a)`
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
+  cursor: pointer;
 `;
 
 export const Menu = styled(motion.div)`
@@ -41,7 +42,7 @@ export const Menu = styled(motion.div)`
   }
 `;
 
-export const MenuBtn = styled.img`
+export const MenuBtn = styled(motion.img)`
   display: none;
 
   @media screen and (max-width: 830px) {
@@ -50,24 +51,10 @@ export const MenuBtn = styled.img`
   }
 `;
 
-export const MenuItems = styled.ul`
+export const MenuItems = styled(motion.ul)`
   display: flex;
   gap: 3rem;
   list-style: none;
-
-  a {
-    font-size: 1.5rem;
-    color: var(--color-text);
-    text-decoration: underline;
-    text-underline-offset: 0.2rem;
-    text-decoration-color: rgba(255, 255, 255, 0);
-    transition: 300ms;
-
-    &:hover {
-      text-decoration-color: rgba(255, 255, 255, 1);
-      text-underline-offset: 0.5rem;
-    }
-  }
 
   @media screen and (max-width: 830px) {
     display: none;
@@ -83,5 +70,19 @@ export const MenuItems = styled.ul`
     );
     padding: 1.5rem 2rem;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+`;
+
+export const MenuLink = styled(motion.a)`
+  font-size: 1.5rem;
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  text-decoration-color: rgba(255, 255, 255, 0);
+  transition: 300ms;
+
+  &:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+    text-underline-offset: 0.5rem;
   }
 `;

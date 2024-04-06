@@ -1,7 +1,7 @@
 import EmailIcon from "../../assets/contact/emailIcon.png";
 import GitHubIcon from "../../assets/contact/githubIcon.png";
 import LinkedinIcon from "../../assets/contact/linkedinIcon.png";
-import { fadeInLeftVariant, fadeInRightVariant } from "../../data/animation";
+import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/animation";
 import { Container, Links, Link } from "./Contact.styles";
 import { motion } from "framer-motion";
 

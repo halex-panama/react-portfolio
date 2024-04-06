@@ -1,4 +1,4 @@
-import { fadeInBottomVariant, fadeInLeftVariant } from "../../data/animation";
+import { fadeInBottomVariant, fadeInLeftVariant } from "../../utils/animation";
 import { Container, Content, Heading } from "./About.styles";
 
 const About = () => {

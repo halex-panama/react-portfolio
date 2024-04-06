@@ -1,6 +1,6 @@
 import { Container, Content, ContactBtn, HeroImg } from "./Hero.styles";
 import ProfileImg from "../../assets/hero/hero.jpg";
-import { fadeInTopVariant, fadeInBottomVariant } from "../../data/animation";
+import { fadeInTopVariant, fadeInBottomVariant } from "../../utils/animation";
 
 const Hero = () => {
   return (
