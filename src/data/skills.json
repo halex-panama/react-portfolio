@@ -22,5 +22,9 @@
   {
     "title": "Styled Components",
     "level": "Basic"
+  },
+  {
+    "title": "Tailwind",
+    "level": "Basic"
   }
 ]
