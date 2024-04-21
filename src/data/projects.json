@@ -3,7 +3,7 @@
     "title": "Agency Landing Page Web",
     "imageSrc": "https://i.ibb.co/fdy5WQM/landing-page-thumb.png",
     "description": "A sleek agency landing page, marrying modern design with intuitive navigation. Engage visitors and amplify your brand with captivating visuals. Elevate your online presence effortlessly.",
-    "skills": ["React", "Tailwind", "TypeScript"],
+    "skills": ["React", "TypeScript", "Tailwind"],
     "demo": "https://digital-agency-landing-page-975.netlify.app/",
     "source": "https://github.com/halex-panama/react-ts-agency-landing-page",
     "reverse": false
@@ -12,16 +12,16 @@
     "title": "Recipe App",
     "imageSrc": "https://i.ibb.co/wynnNjp/Recipe-app-thumb.png",
     "description": "Explore popular recipes, find your favorites, and explore recipe information, including ingredients and step-by-step instructions, all powered by the Spoonacular API.",
-    "skills": ["React", "Styled Components", "TypeScript"],
+    "skills": ["React", "TypeScript", "Styled Components"],
     "demo": "https://recipe-app-v2-2772.netlify.app/",
     "source": "https://github.com/halex-panama/recipe-app-v2",
     "reverse": true
   },
   {
     "title": "Movie App",
-    "imageSrc": "https://i.ibb.co/vLW44mC/Movie-app-thumb.png",
+    "imageSrc": "https://i.ibb.co/fq8rDjS/Movie-app-thumb.png",
     "description": "Embark on a cinematic journey with my project-based portfolio, powered by the TMDB API. Explore popular movies, dive into detailed movie information, including trailers and cast members.",
-    "skills": ["React", "Styled Components", "TypeScript"],
+    "skills": ["React", "TypeScript", "Styled Components"],
     "demo": "https://movie-app-1605.netlify.app/",
     "source": "https://github.com/halex-panama/movie-app-v3",
     "reverse": false
