@@ -32,3 +32,13 @@ export const GlobalStyle = createGlobalStyle`
   overflow: hidden;
 }
 `;
+
+// {
+//   "title": "Shopi",
+//   "imageSrc": "https://i.ibb.co.com/mG6scGR/shopi-clone-netlify-app-products-1.png",
+//   "description": "Shopi—a dynamic e-commerce website inspired by Shopee.com! The magic of online shopping with intuitive product browsing, powerful search features, and a user-friendly cart checkout process.",
+//   "skills": ["React", "TypeScript", "Tailwind"],
+//   "demo": "https://shopi-clone.netlify.app/",
+//   "source": "https://github.com/halex-panama/react-ts-online-shopping",
+//   "reverse": true
+// }
