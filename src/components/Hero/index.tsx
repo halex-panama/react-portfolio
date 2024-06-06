@@ -22,7 +22,7 @@ const Hero = () => {
           digital world.
         </p> */}
         <p>Frontend Developer</p>
-        <ContactBtn href="mailto:halex.panama@email.com">Contact Me</ContactBtn>
+        <ContactBtn href="#contact">Contact Me</ContactBtn>
       </Content>
       <HeroImg
         initial="hidden"

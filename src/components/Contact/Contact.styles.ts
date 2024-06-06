@@ -5,8 +5,8 @@ export const Container = styled.footer`
   color: var(--color-text);
   background-color: var(--color-secondary);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   width: 100vw;
   padding: 58px 10%;
   gap: 1.5rem;
@@ -25,8 +25,7 @@ export const Container = styled.footer`
   }
 
   @media screen and (max-width: 830px) {
-    flex-direction: column;
-
+    /* padding: 58px 0; */
     div {
       display: flex;
       flex-direction: column;
@@ -36,6 +35,17 @@ export const Container = styled.footer`
     p {
       font-size: 1.5rem;
     }
+  }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10rem;
+
+  @media screen and (max-width: 830px) {
+    gap: 1rem;
   }
 `;
 
@@ -72,6 +82,66 @@ export const Link = styled.li`
 
     img {
       height: 1.2rem;
+    }
+  }
+`;
+
+export const Form = styled(motion.form)`
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  input,
+  textarea {
+    outline-color: var(--color-primary);
+  }
+
+  textarea {
+    min-height: 10rem;
+  }
+
+  input,
+  textarea,
+  button {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    /* width: 50%; */
+    border: none;
+  }
+
+  button {
+    width: fit-content;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-dark);
+    background-color: transparent;
+    color: var(--color-text);
+    transition: 0.3s;
+    background-color: var(--color-primary);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-bg);
+    }
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 830px) {
+    width: 100%;
+
+    input,
+    textarea {
+      width: 100%;
+    }
+
+    button {
+      margin: 1rem auto;
     }
   }
 `;
