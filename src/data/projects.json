@@ -9,13 +9,22 @@
     "reverse": false
   },
   {
+    "title": "Gym Landing Page Web",
+    "imageSrc": "https://i.ibb.co.com/cx7VSPm/gym-landing-page-86-netlify-app.png",
+    "description": "A captivating gym landing page website designed to inspire fitness enthusiasts! With a focus on responsive design, dynamic navbar and layout that seamlessly adapts to various screen sizes and also beautiful animation while scrolling.",
+    "skills": ["React", "TypeScript", "Tailwind"],
+    "demo": "https://gym-landing-page-86.netlify.app/",
+    "source": "https://github.com/halex-panama/react-ts-gym-landing-page",
+    "reverse": true
+  },
+  {
     "title": "Recipe App",
     "imageSrc": "https://i.ibb.co.com/wynnNjp/Recipe-app-thumb.png",
     "description": "Explore popular recipes, find your favorites, and explore recipe information, including ingredients and step-by-step instructions, all powered by the Spoonacular API.",
     "skills": ["React", "TypeScript", "Styled Components"],
     "demo": "https://recipe-app-v2-2772.netlify.app/",
     "source": "https://github.com/halex-panama/recipe-app-v2",
-    "reverse": true
+    "reverse": false
   },
   {
     "title": "Movie App",
@@ -24,7 +33,7 @@
     "skills": ["React", "TypeScript", "Styled Components"],
     "demo": "https://movie-app-1605.netlify.app/",
     "source": "https://github.com/halex-panama/movie-app-v3",
-    "reverse": false
+    "reverse": true
   },
   {
     "title": "Shopi",
@@ -33,6 +42,6 @@
     "skills": ["React", "TypeScript", "Tailwind"],
     "demo": "https://shopi-clone.netlify.app/",
     "source": "https://github.com/halex-panama/react-ts-online-shopping",
-    "reverse": true
+    "reverse": false
   }
 ]
