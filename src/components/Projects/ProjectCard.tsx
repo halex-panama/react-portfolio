@@ -32,6 +32,7 @@ const ProjectCard = ({
         variants={reverse ? fadeInRightVariant : fadeInLeftVariant}
         src={imageSrc}
         alt={title}
+        loading="lazy"
       />
       <TextContainer
         initial="hidden"

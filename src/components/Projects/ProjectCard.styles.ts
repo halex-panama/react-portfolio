@@ -20,14 +20,15 @@ export const Container = styled.div<Props>`
 `;
 
 export const ProjectImg = styled(motion.img)`
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   width: 50%;
   height: 50%;
 
   @media screen and (max-width: 830px) {
     order: 0;
     width: 100%;
-    height: 100%;
+    height: 12.5rem;
+    object-fit: cover;
   }
 `;
 

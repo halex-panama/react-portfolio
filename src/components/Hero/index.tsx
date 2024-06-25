@@ -30,6 +30,7 @@ const Hero = () => {
         variants={fadeInTopVariant}
         src={ProfileImg}
         alt="hero image"
+        loading="lazy"
       />
     </Container>
   );
