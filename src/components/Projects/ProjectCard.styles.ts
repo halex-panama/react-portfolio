@@ -6,6 +6,7 @@ type Props = {
 };
 
 export const Container = styled.div<Props>`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,15 +20,40 @@ export const Container = styled.div<Props>`
   }
 `;
 
+export const Skeleton = styled.div<Props>`
+  animation: skeleton-loading 1s linear infinite alternate;
+  position: absolute;
+  width: 50%;
+  height: 17.5rem;
+  border-radius: 0.5rem;
+  top: 0;
+  left: ${({ reverse }) => (reverse ? "" : 0)};
+  right: ${({ reverse }) => (reverse ? 0 : "")};
+
+  @media screen and (max-width: 830px) {
+    width: 100%;
+    height: 12.5rem;
+  }
+
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200, 20%, 80%);
+    }
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }
+`;
+
 export const ProjectImg = styled(motion.img)`
   border-radius: 0.5rem;
   width: 50%;
   height: 50%;
+  min-height: 12.5rem;
 
   @media screen and (max-width: 830px) {
     order: 0;
     width: 100%;
-    height: 12.5rem;
     object-fit: cover;
   }
 `;
@@ -37,6 +63,7 @@ export const TextContainer = styled(motion.div)`
   gap: 1.5rem;
   display: flex;
   flex-direction: column;
+  width: 50%;
 
   h3 {
     font-size: 1.5rem;
@@ -46,6 +73,10 @@ export const TextContainer = styled(motion.div)`
   p {
     font-size: 1.25rem;
     font-weight: 400;
+  }
+
+  @media screen and (max-width: 830px) {
+    width: auto;
   }
 `;
 

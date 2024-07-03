@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/animation";
 import {
   Container,
@@ -7,6 +8,7 @@ import {
   Links,
   Link,
   ProjectImg,
+  Skeleton,
 } from "./ProjectCard.styles";
 
 type Props = {
@@ -24,8 +26,10 @@ type Props = {
 const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source, reverse },
 }: Props) => {
+  const [loadingImage, setLoadingImage] = useState(true);
   return (
     <Container reverse={reverse}>
+      {loadingImage && <Skeleton reverse={reverse} />}
       <ProjectImg
         initial="hidden"
         whileInView="visible"
@@ -33,6 +37,7 @@ const ProjectCard = ({
         src={imageSrc}
         alt={title}
         loading="lazy"
+        onLoad={() => setLoadingImage(false)}
       />
       <TextContainer
         initial="hidden"
