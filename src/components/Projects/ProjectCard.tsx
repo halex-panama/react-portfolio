@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { fadeInLeftVariant, fadeInRightVariant } from "../../utils/animation";
 import {
   Container,
@@ -7,14 +6,15 @@ import {
   Skill,
   Links,
   Link,
-  ProjectImg,
-  Skeleton,
 } from "./ProjectCard.styles";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/black-and-white.css";
 
 type Props = {
   project: {
     title: string;
     imageSrc: string;
+    placeholderSrc: string;
     description: string;
     skills: string[];
     demo: string;
@@ -24,20 +24,24 @@ type Props = {
 };
 
 const ProjectCard = ({
-  project: { title, imageSrc, description, skills, demo, source, reverse },
+  project: {
+    title,
+    imageSrc,
+    placeholderSrc,
+    description,
+    skills,
+    demo,
+    source,
+    reverse,
+  },
 }: Props) => {
-  const [loadingImage, setLoadingImage] = useState(true);
   return (
     <Container reverse={reverse}>
-      {loadingImage && <Skeleton reverse={reverse} />}
-      <ProjectImg
-        initial="hidden"
-        whileInView="visible"
-        variants={reverse ? fadeInRightVariant : fadeInLeftVariant}
+      <LazyLoadImage
         src={imageSrc}
-        alt={title}
-        loading="lazy"
-        onLoad={() => setLoadingImage(false)}
+        placeholderSrc={placeholderSrc}
+        className="lazy-img"
+        effect="black-and-white"
       />
       <TextContainer
         initial="hidden"
