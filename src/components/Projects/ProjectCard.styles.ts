@@ -17,13 +17,32 @@ export const Container = styled.div<Props>`
   @media screen and (max-width: 830px) {
     flex-direction: column;
   }
+`;
 
-  .lazy-img {
-    border-radius: 10px;
+export const ImageContainer = styled(motion.div)`
+  border-radius: 1rem;
+  min-height: 15.7rem;
+  min-width: 25rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    border-radius: 1rem;
     width: 100%;
     height: 100%;
+    min-height: 15.7rem;
+    min-width: 25rem;
+  }
+
+  @media screen and (max-width: 830px) {
     min-height: 12.5rem;
     min-width: 20rem;
+
+    img {
+      min-height: 12.5rem;
+      min-width: 20rem;
+    }
   }
 `;
 

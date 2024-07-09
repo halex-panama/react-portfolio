@@ -6,6 +6,7 @@ import {
   Skill,
   Links,
   Link,
+  ImageContainer,
 } from "./ProjectCard.styles";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/black-and-white.css";
@@ -37,12 +38,16 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <Container reverse={reverse}>
-      <LazyLoadImage
-        src={imageSrc}
-        placeholderSrc={placeholderSrc}
-        className="lazy-img"
-        effect="black-and-white"
-      />
+      <ImageContainer>
+        <LazyLoadImage
+          src={imageSrc}
+          placeholderSrc={placeholderSrc}
+          width={"100%"}
+          height={"100%"}
+          className="lazy-img"
+          effect="black-and-white"
+        />
+      </ImageContainer>
       <TextContainer
         initial="hidden"
         whileInView="visible"
