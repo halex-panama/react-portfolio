@@ -52,6 +52,7 @@ const ProjectCard = ({
         initial="hidden"
         whileInView="visible"
         variants={!reverse ? fadeInRightVariant : fadeInLeftVariant}
+        viewport={{ once: true }}
       >
         <h3>{title}</h3>
         <Skills>

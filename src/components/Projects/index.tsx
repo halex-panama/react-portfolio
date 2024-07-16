@@ -10,6 +10,7 @@ const Projects = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInLeftVariant}
+        viewport={{ once: true }}
       >
         Projects
       </Heading>

@@ -44,6 +44,7 @@ const Navbar = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInLeftVariant}
+        viewport={{ once: true }}
         onClick={goToTop}
       >
         My Portfolio
@@ -52,6 +53,7 @@ const Navbar = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInRightVariant}
+        viewport={{ once: true }}
       >
         <MenuBtn
           whileTap={{ rotate: 75, scale: 0.9 }}
@@ -64,6 +66,7 @@ const Navbar = () => {
           initial="hidden"
           whileInView="visible"
           variants={fadeInRightVariant}
+          viewport={{ once: true }}
           className={menu ? "menuOpen" : undefined}
         >
           {menuLinks.map((link, id) => (
@@ -72,6 +75,7 @@ const Navbar = () => {
                 initial="initial"
                 whileInView="animate"
                 variants={fadeInMenuVariant}
+                viewport={{ once: true }}
                 custom={id}
                 onClick={() => setMenu(false)}
                 href={link.to}

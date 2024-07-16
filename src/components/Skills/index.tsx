@@ -10,6 +10,7 @@ const Skills = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInLeftVariant}
+        viewport={{ once: true }}
       >
         Skills
       </Heading>
@@ -19,6 +20,7 @@ const Skills = () => {
             initial="initial"
             whileInView="animate"
             variants={fadeInSkillsVariant}
+            viewport={{ once: true }}
             custom={id}
             key={id}
           >

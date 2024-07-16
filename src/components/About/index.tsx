@@ -8,6 +8,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInLeftVariant}
+        viewport={{ once: true }}
       >
         About Me
       </Heading>
@@ -15,6 +16,7 @@ const About = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInBottomVariant}
+        viewport={{ once: true }}
       >
         <p>
           Hi there <br /> I'm Alex, a passionate Frontend Developer dedicated to

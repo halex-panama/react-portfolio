@@ -9,6 +9,7 @@ const Hero = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInBottomVariant}
+        viewport={{ once: true }}
       >
         <h1>Hi I'm Alex</h1>
         {/* <p>
@@ -28,6 +29,7 @@ const Hero = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInTopVariant}
+        viewport={{ once: true }}
         src={ProfileImg}
         alt="hero image"
         loading="lazy"

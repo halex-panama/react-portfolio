@@ -25,6 +25,7 @@ const Contact = () => {
         initial="hidden"
         whileInView="visible"
         variants={fadeInLeftVariant}
+        viewport={{ once: true }}
       >
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
@@ -38,6 +39,7 @@ const Contact = () => {
           initial="hidden"
           whileInView="visible"
           variants={fadeInLeftVariant}
+          viewport={{ once: true }}
         >
           <input
             type="text"
@@ -87,6 +89,7 @@ const Contact = () => {
           initial="hidden"
           whileInView="visible"
           variants={fadeInRightVariant}
+          viewport={{ once: true }}
         >
           <Link>
             <img src={GitHubIcon} alt="github" />

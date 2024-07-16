@@ -20,6 +20,16 @@
     "reverse": true
   },
   {
+    "title": "Online Course Landing Page Web",
+    "imageSrc": "https://i.ibb.co/THQ7TRW/Online-Course.png",
+    "placeholderSrc": "https://i.ibb.co/3pP5Cy4/Online-Course-Low.jpg",
+    "description": "An online course landing page designed to captivate and convert potential students. Featuring a responsive layout, intuitive navigation, engaging animations, and a sleek, modern design. Explore the future of online education with this dynamic and user-friendly landing page!",
+    "skills": ["React", "TypeScript", "Tailwind"],
+    "demo": "https://physics-course.netlify.app/",
+    "source": "https://github.com/halex-panama/react-ts-online-course-landing-page",
+    "reverse": false
+  },
+  {
     "title": "Recipe App",
     "imageSrc": "https://i.ibb.co.com/fHbmqj9/Recipe-App.png",
     "placeholderSrc": "https://i.ibb.co.com/Kz67Qgc/Recipe-App-low.jpg",
@@ -27,7 +37,7 @@
     "skills": ["React", "TypeScript", "Styled Components"],
     "demo": "https://recipe-app-v2-2772.netlify.app/",
     "source": "https://github.com/halex-panama/recipe-app-v2",
-    "reverse": false
+    "reverse": true
   },
   {
     "title": "Movie App",
@@ -37,7 +47,7 @@
     "skills": ["React", "TypeScript", "Styled Components"],
     "demo": "https://movie-app-1605.netlify.app/",
     "source": "https://github.com/halex-panama/movie-app-v3",
-    "reverse": true
+    "reverse": false
   },
   {
     "title": "Shopi",
@@ -47,6 +57,6 @@
     "skills": ["React", "TypeScript", "Tailwind"],
     "demo": "https://shopi-clone.netlify.app/",
     "source": "https://github.com/halex-panama/react-ts-online-shopping",
-    "reverse": false
+    "reverse": true
   }
 ]
